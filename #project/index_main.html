@@ -1,0 +1,920 @@
+<html>
+	<head>
+		<title></title>
+		<style>
+			body{
+				background:red;
+				margin:0;
+			}
+			div{
+				font-family:Calibri;
+			}
+			.inner{
+				width:1200px;
+			}
+			.button{
+				color:white;
+				display:block;
+				background:#aa7938;
+				border-radius:10px;
+				border:none;
+				text-align:center;
+				padding:15px;
+				font-weight:bolder;
+			}
+			.button_card{
+				color:#aa7938;
+				display:block;
+				background:#fff;
+				border-radius:5px;
+				border:1px solid #aa7938;
+				text-align:center;
+				padding:10px 15px;
+				font-weight:700;
+				margin-left:125px;
+			}
+			.link{
+				color:white;
+				text-decoration:none;
+			}
+			#menuarea{
+				height:60px;
+				background:white;
+				margin:0 auto;
+				padding:0 auto;
+			}
+				#menuarea ul{
+					list-style:none;
+				}
+				#menuarea ul li{
+					margin-top:5px;
+					float:left;
+					display:"block";
+					padding:15px 20px;
+				}
+				#menuarea ul li a{
+					color:black;
+					text-decoration:none;
+				}
+				#menuarea ul li ul{
+					display:none;
+				}
+				#menuarea ul li:hover ul li{
+					float:none;
+					border-bottom:solid 1px black;
+				}
+				#menuarea ul li:hover ul{
+					background:white;
+					display:block;
+					position:absolute;
+					z-index:1000;
+				}
+				#menuarea ul li:nth-child(11){
+					background:#aa7938;
+					border-radius:10px;
+					border:none;
+				}
+			@keyframes slide{
+				0%{
+					background:url(https://www.tajhotels.com/content/dam/tajhotels/in/en/offers/celebrating-our-bond/tajhotels/cb-des.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg) no-repeat center;
+					transform:scale(1.2,1);
+				}
+				15%{
+					background:url(https://www.tajhotels.com/content/dam/tajhotels/in/en/offers/celebrating-our-bond/fnb/CDD-Website-Banners-1200x400-2.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg) no-repeat center;
+					transform:scale(1.2,1);
+				}
+				30%{
+					background:url(https://www.tajhotels.com/content/dam/ihcl/banners/brandfinance-1200x400.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg) no-repeat center;
+					transform:scale(1.2,1);
+				}
+				45%{
+					background:url(https://www.tajhotels.com/content/dam/tajhotels/banners/taj-members-special-desktop.png/jcr:content/renditions/cq5dam.web.1280.1280.png) no-repeat center;
+					transform:scale(1.2,1);
+				}
+				60%{
+					background:url(https://www.tajhotels.com/content/dam/luxury/hotels/taj-the-trees-mumbai/facade-img/Taj-The-Trees-web-banner-new.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg) no-repeat center;
+					transform:scale(1.2,1);
+				}
+				75%{
+					background:url(https://www.tajhotels.com/content/dam/luxury/hotels/taj-guras-kutir-gangtok/banners/tgk-banner-larger-logo.jpeg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg) no-repeat center;
+					transform:scale(1.2,1);
+				}
+				100%{
+					background:url(https://www.tajhotels.com/content/dam/tajhotels/campaign/she-remains-the-taj/woyage/woyage-desktop-banner.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg) no-repeat center;
+					transform:scale(1.2,1);
+				}
+			}
+			#slidearea{
+				background:#fff;
+				width:100%;
+				height:400px;
+			}
+				#slidearea img{
+					background:#f0f;
+					width:1200px;
+					height:400px;
+					animation:slide 70s infinite;
+				}
+			#toparea{
+				background-image:linear-gradient(to bottom right, blue 70%, pink);
+				width:100%;
+				height:150px;
+				padding:0;
+				margin:0;
+			}
+				#toparea ul{
+					margin:0;
+				}
+				#toparea ul li{
+					float:left;
+					list-style:none;
+					color:white;
+					padding:15px 30px;
+					margin:0;
+				}
+			.headline{	
+				margin:0;
+				padding-top:30px;
+				padding-bottom:30px;
+				color:#4a4949;
+				font-size:300%;
+				font-family:Calibri;
+				font-weight:700px;
+			}
+			#midarea{
+				background:white;
+				height:600px;
+				width:100%;
+			}
+				#midarea1{
+					background:#fafafa;
+					height:500px;
+					width:400px;
+					float:left;
+				}
+				#midarea1 ul{
+					margin:20px 15px;
+					list-style:none;
+				}
+				#midarea1 ul li{
+					font-size:130%;
+					padding-bottom:40px;
+				}
+				#midarea2{
+					background:#efeeee;
+					height:500px;
+					width:400px;
+					float:left;
+				}
+				#midarea2 ul{
+					list-style:none;
+					margin:100px 20px;
+					padding:15px;
+				}
+				#midarea2 ul li{
+					padding-bottom:30px;
+				}
+				#midarea3{
+					float:left;
+				}
+			.list{
+				list-style:none;
+				float:left;
+			}
+			.fsize{
+				padding-top:10px;
+				font-size:120%;
+				font-weight:bolder;
+			}
+			#popular_area{
+				background:#fff;
+				height:600px;
+				width:100%;
+			}
+				#pa{
+					margin-left:110px;
+				}
+				#pa1{
+					width:300px;
+					height:410px;
+					background:#fff;
+					float:left;
+					overflow:hidden;
+					margin-left:15px;
+					box-shadow: 5px 5px 24px 0px rgba(0,0,0,0.3);
+				}
+				#pa1 img{
+					margin-left:-230px;
+				}
+				#pa2{
+					background:#fff;
+					width:140px;
+					height:100px;
+					float:left;
+					margin-left:10px;
+					margin-top:20px;
+				}
+			#happen_area{
+				background:#fff;
+				width:100%;
+				height:650px;
+			}
+				#ha{
+					width:1300px;
+					height:500;
+					float:left;
+					margin-left:110px;
+				}
+				#ha_a{
+					width:600px;
+					height:500px;
+					background:#fff;
+					float:left;
+					margin-left:50px;
+					box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+				}
+				#ha1{
+					width:600px;
+					height:50px;
+					background: #fff;
+					float:left;
+				}
+				#ha2{
+					width:600px;
+					height:350px;
+					background:yellow;
+					overflow:hidden;
+				}
+				#ha2 img{
+					margin-top:-32px;
+					transform:scale(1.1,0.9);
+				}
+				
+				#ha2_a{
+					width:600px;
+					height:350px;
+					background:yellow;
+					overflow:hidden;
+				}
+				#ha2_a img{
+					margin-top:-32px;
+					transform:scale(1.1,1.1);
+				}
+				#ha2_f1{
+					margin-left:20px;
+					float:left;
+					width:410px;
+				}
+				#ha2_f2{
+					float:left;
+					margin-top:25px;
+				}
+			#explore_area{
+				width:100%;
+				height:auto;
+				background:#fff;
+			}
+				#exp_area{
+					width:1500px;
+					height:600px;
+					background:#f5f5f5;
+					margin:0 auto;
+				}
+				#exp_area img{
+					transform:scale(1.4,1.2);
+				}
+				.exp_image{
+					width:375px;
+					height:300px;/*250px*/
+					background:#f0f;
+					float:left;
+					overflow:hidden;
+				}
+				.exp_text{
+					width:295px;
+					height:220px;/*170px*/
+					background:#f5f5f5;
+					float:left;
+					margin:40px;
+				}
+				.exp_h{
+					color:#333333;
+					font-size:120%;
+				}
+				.exp_p{
+					color:#333333;
+				}
+			#our_area{
+				width:100%;
+				height:auto;
+				background:#fff;
+			}
+				#our_img{
+					width:1500px;
+					height:440px;
+					margin:0 auto;
+					background:#fff;
+				}
+					.our_img_p{
+						color:white;
+						font-size:130%;
+						font-weight:800;
+						text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.88);
+					}
+					#our1_area{
+						width:880px;
+						height:420px;
+						background:#fff;
+						border-radius:10px;
+						float:left;
+						overflow:hidden;
+						margin:0 20px 20px 120px;
+					}
+					#our2_area{
+						width:380px;
+						height:440px;
+						background:#fff;
+						float:left;
+					}
+					#our2_img{
+						width:380px;
+						height:200px;
+						border-radius:10px;
+						background:yellow;
+						float:left;
+						overflow:hidden;
+						margin:0 auto;
+					}
+					#our3_img{
+						width:480px;
+						height:200px;
+						border-radius:10px;
+						background:rgb(0, 110, 255);
+						float:left;
+						overflow:hidden;
+						margin:0 20px;
+					}
+					#our3_area{
+						width:100%;
+						height:220px;
+						margin:0 auto;
+						background:#fff;
+					}
+			
+			.logo_back{
+				width:370px;
+				height:500px;
+				border-radius:5px;
+				position:absolute;
+				background:rgba(0,0,0,.5);
+				margin:-500px 0 0 0;
+				float:left;
+				overflow:hidden;
+			}
+			#brand_area{
+				width:100%;
+				height:700px;
+				background:#fff;
+			}
+				#brand0_area{
+					width:1515px;
+					height:520px;
+					background:#fff;
+					overflow:auto;
+				}
+				#brand1_area{
+					width:2600px;
+					height:500px;
+					background:#fff;
+				}
+				.box{
+					width:370px;
+					height:500px;
+					border-radius:5px;
+					float:left;
+					position:relative;
+					overflow:hidden;
+				}
+				.box:hover .details_1{
+					bottom:0;
+				}
+				.details_1{
+					width:370px;
+					height:500px;
+					border-radius:5px;
+					position:absolute;
+					bottom:-500px;
+					background:#fff;
+					color:#787777;
+					overflow:hidden;
+					transition:all 0.5s;
+				}
+					.details_1 .card_img{
+						width:100%;
+						height:360px;
+						margin:-160px 0 0 0;
+						overflow:hidden;
+					}
+					.details_1 .card_logo{
+						overflow:hidden;
+ 						display: block;
+ 						margin:20px auto;
+					}
+					#b1_area{
+						width:370px;
+						height:500px;
+						border-radius:5px;
+						background:#f1f999;
+						float:left;
+						overflow:hidden;
+					}
+					#b2_area{
+						width:370px;
+						height:500px;
+						border-radius:5px;
+						background:#f1f999;
+						float:left;
+						overflow:hidden;
+						display:none;
+						position:relative;
+					}
+			#footer_area{
+				width:1519px;
+				height:480px;
+				background:#efeeee;
+			}
+				.f1_area{
+					width:300px;
+					height:200px;
+					background:#efeeee;
+					float:left;
+				}
+					.f1_area ul{
+						padding:0;
+					}
+					.f1_area ul li{
+						margin:0 0 0 0;
+						padding:5px 0;
+						list-style-type:none;
+					}
+		</style>
+	</head>
+	<body>
+		<div id="menuarea">
+			<ul>
+				<li style="margin:0 0 5px 0"><img src="https://www.tajhotels.com/content/dam/tajhotels/icons/style-icons/logo--Taj.png" width="50px" height="40px"></li>
+				<li><a href="#">OUR HOTELS</a></li>
+				<li><a href="#">DINING</a></li>
+				<li><a href="#">WEDDINGS</a></li>
+				<li><a href="#">GIFT CARDS</a></li>
+				<li><a href="#">TAJ HOLIDAYS</a></li>
+				<li>
+					<a href="#">MEMBERSHIP PROGRAMS</a>
+					<ul>
+						<li><a href="#">THE CHAMBERS</a></li>
+						<li><a href="#">NEUPASS</a></li>
+						<li><a href="#">EPICURE</a></li>
+						<li><a href="#">BUSINESS CONNECT</a></li>
+					</ul>
+				</li>
+				<li><a href="#">MANAGE BOOKING</a></li>
+				<li><a href="#">SIGN IN</a></li>
+				<li>
+					<a href="#"><img src="https://www.tajhotels.com/content/dam/tajhotels/icons/style-icons/flag-uk.jpg"> EN</a>
+					<ul>
+						<li><a href="#"><img src="https://www.tajhotels.com/content/dam/tajhotels/icons/style-icons/flag-ge.jpg"> DEUTSCH</a></li>
+						<li><a href="#"><img src="https://www.tajhotels.com/content/dam/tajhotels/icons/style-icons/flag-cn.jpg"> 简体中文</a></li>
+						<li><a href="#"><img src="https://www.tajhotels.com/content/dam/tajhotels/icons/style-icons/flag-fr.jpg"> FRANCAIS</a></li>
+					</ul>
+				</li>
+				<li><a href="https://be.synxis.com/?chain=21305"><font color="white">BOOK A STAY</font></a></li>
+			</ul>
+		</div>
+		<div id="slidearea">
+			<img>
+		</div>
+		<div id="toparea">
+			<div>
+				<ul align="center" valign="center">
+					<li>
+						<img src="https://www.tajhotels.com/content/dam/tic/tataneu/neupass/neupass-banner/neupass-logo-desktop-646x228-08.png/jcr:content/renditions/cq5dam.web.323.323.png">
+					</li>
+					<li>
+
+						<img src="https://www.tajhotels.com/content/dam/tic/tataneu/neupass/neupass-banner/icons-desktop-mobile-100x100-04-01.png" width="60px" height="60px">
+						<br>Exclusive<br>Member Rates
+					</li>
+					<li>
+
+						<img src="https://www.tajhotels.com/content/dam/tic/tataneu/neupass/neupass-banner/icons-desktop-mobile-100x100-05-01.png" width="60px" height="60px">
+						<br>
+						Special Offers on<br>Stays & Dining
+					</li>
+					<li>
+						<img src="https://www.tajhotels.com/content/dam/tic/tataneu/neupass/neupass-banner/icons-desktop-mobile-100x100-06-01.png" width="60px" height="60px">
+						<br>
+						Earn and Redeem<br>across multiple<br>brands
+					</li>
+					<li>
+						<img src="https://www.tajhotels.com/content/dam/tic/tataneu/neupass/neupass-banner/icons-desktop-mobile-100x100-07-01.png" width="60px" height="60px">
+						<br>Minimum NeuCoins<br>with every booking<br>1 NeuCoin = &#8377 1</li>
+					<li>
+						<div><h2>BECOME A MEMBER!</h2></div>
+							
+						<div class="button">Enroll Now</div>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="midarea">
+			<p align="center" class="headline">OFFERS & PROMOTIONS</p>
+			<div id="midarea1">
+				<ul>
+					<li>Celebrating our bond</li>
+					<li>Urban Getaways</li>
+					<li>Member Exclusive Offer</li>
+					<li>Carecations</li>
+					<li>Suite Surprises</li>
+					<li>Stay a Bit Longer</li>
+				</ul>
+			</div>
+			<div id="midarea2">
+				<ul>
+					<li style="font-size:150%;">CELEBRATING OUR BOND</li>
+					<li>Celebrating our bond</li>
+					<li style="color:#aa7938;"><b>VALID TILL 30 NOV 2023</b></li>
+					<li valign="center">
+						<button class="button"><a href="https://www.tajhotels.com/en-in/offers/celebrating-our-bond/" class="link">VIEW DETAILS</a></button>
+					</li>
+				</ul>
+			</div>
+			<div id="midarea3">
+				<img src="https://www.tajhotels.com/content/dam/tajhotels/in/en/offers/celebrating-our-bond/tajhotels/Banner-690x490.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" height="500px">
+			</div>
+		</div>
+		<div id="popular_area">
+			<p align="center" class="headline">POPULAR DESTINATIONS</p>
+			<div id="pa">
+				<div id="pa1">
+					<img src="https://www.tajhotels.com/content/dam/luxury/hotels/Taj_Mahal_Mumbai/images/16x7/AAG_27642205-H1-015Pooside-16x7.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" height="325px">
+					<div id="pa2" class="fsize">
+						Mumbai
+					</div>
+					<div id="pa2">
+						<button class="button"><a href="#" class="link">VIEW DETAILS</a></button>
+					</div>
+				</div>
+				<div id="pa1">
+					<img src="https://www.tajhotels.com/content/dam/luxury/hotels/Taj_Holiday_Village_Goa/images/16x7/Taj%20Goa%2016X9.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" height="325px">
+					<div id="pa2" class="fsize">
+						Goa
+					</div>
+					<div id="pa2">
+						<button class="button"><a href="#" class="link">VIEW DETAILS</a></button>
+					</div>
+				</div>
+				<div id="pa1">
+					<img src="https://www.tajhotels.com/content/dam/luxury/hotels/Taj_Mahal_Delhi/images/new-images/taj-mahal-new-delhi-yesterday-today-forever.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" height="325px">
+					<div id="pa2" class="fsize">
+						New Delhi
+					</div>
+					<div id="pa2">
+						<button class="button"><a href="#" class="link">VIEW DETAILS</a></button>
+					</div>
+				</div>
+				<div id="pa1">
+					<img src="https://www.tajhotels.com/content/dam/luxury/hotels/jai-mahal-palace,jaipur/images/new-images/Taj%20Jai%20Mahal%20Palace.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" height="325px">
+					<div id="pa2" class="fsize">
+						Jaipur
+					</div>
+					<div id="pa2">
+						<button class="button"><a href="#" class="link">VIEW DETAILS</a></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="happen_area">
+			<p align="center" class="headline">HAPPENINGS</p>
+			<div id="ha">
+				<div id="ha_a">
+					<div id="ha1" align="center">
+						<table align="center">
+							<tr>
+								<td><img src="clock.png"></td>
+								<td><font valign="center">Now Open</font></td>
+							</tr>
+						</table>
+					</div>
+					<div id="ha2">
+						<img src="https://www.tajhotels.com/content/dam/luxury/hotels/taj-guras-kutir-gangtok/banners/tgk-banner-mobile.jpeg/jcr:content/renditions/cq5dam.web.512.512.jpeg" width="600px">
+					</div>
+					<div id="ha2_f1">
+						<h2>Taj Guras Kutir Resort & Spa</h2>
+						<p>Gangtok</p>
+					</div>
+					<div id="ha2_f2">
+						<button class="button">VIEW DETAILS</button>
+					</div>
+				</div>
+				<div id="ha_a">
+					<div id="ha1" align="center">
+						<table align="center">
+							<tr>
+								<td><img src="clock.png"></td>
+								<td><font valign="center">Now Open</font></td>
+							</tr>
+						</table>
+					</div>
+					<div id="ha2_a">
+						<img src="https://www.tajhotels.com/content/dam/luxury/hotels/taj-the-trees-mumbai/facade-img/taj-the-trees-happenings.png/jcr:content/renditions/cq5dam.web.512.512.png" width="600px">
+					</div>
+					<div id="ha2_f1">
+						<h2>Taj The Trees</h2>
+						<p>Mumbai</p>
+					</div>
+					<div id="ha2_f2">
+						<button class="button">VIEW DETAILS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="width:100%; background:#fff;">
+			<p align="center" style="color:#aa7938; margin:0;"><b>SHOW MORE</b></p>
+		</div>
+		<div id="explore_area">
+			<p align="center" class="headline" style="margin:0; padding-top:50px;">EXPLORE TAJ</p>
+			<p align="center" style="color:#686868; font-family: Arial, Helvetica, sans-serif;">
+				Descend into a world that was once the sole preserve of royalty, step onto the soft, 
+				white sand beaches at a secluded island or <br> discover the hidden secrets of mist-draped hills with Taj
+			</p>
+			<div id="exp_area">
+				<div class="exp_image">
+					<img src="https://www.tajhotels.com/content/dam/tajhotels/in/en/themes/Beach_dining_theme.png/jcr:content/renditions/cq5dam.web.512.512.png">
+				</div>
+				<div class="exp_text">
+					<p class="exp_h" style="margin:0;">BEACH RETREATS</p>
+					<p class="exp_p">
+						Wake up to the sound of waves lapping lazily at the shore. Uncover serenity and marvel at the wealth of beauty within the glittering blue seas. Give in to the siren song of the sun, sand and surf with Beach Retreats.
+					</p>
+					<p style="color:#aa7938;">VIEW DETAILS<img src="https://www.tajhotels.com/content/dam/tajhotels/icons/right-arrow.PNG" width="30px" valign="top" style="margin:3px 0 0 10px;"></p>
+				</div>
+				<div class="exp_image">
+					<img src="https://www.tajhotels.com/content/dam/tajhotels/in/en/themes/hill_station_theme.png/jcr:content/renditions/cq5dam.web.512.512.png">
+				</div>
+				<div class="exp_text">
+					<p class="exp_h" style="margin:0;">HILL STATIONS</p>
+					<p class="exp_p">
+						Gaze at the mist rolling in over the hill-tops from your luxurious villa. Marvel at glorious sunsets that will take your breath away from a private deck.
+					</p>
+					<p style="color:#aa7938;">VIEW DETAILS<img src="https://www.tajhotels.com/content/dam/tajhotels/icons/right-arrow.PNG" width="30px" valign="top" style="margin:3px 0 0 10px;"></p>
+				</div>
+				<div class="exp_text">
+					<p class="exp_h" style="margin:0;">ROYAL INDIA</p>
+					<p class="exp_p">
+						Wander through the storied halls of a fairy tale palace, where dreams come to life. Retreat into your majestic suite, inspired by elegance.
+					</p>
+					<p style="color:#aa7938;">VIEW DETAILS<img src="https://www.tajhotels.com/content/dam/tajhotels/icons/right-arrow.PNG" width="30px" valign="top" style="margin:3px 0 0 10px;"></p>
+				</div>
+				<div class="exp_image">
+					<img src="https://www.tajhotels.com/content/dam/tajhotels/in/en/themes/royal_theme.png/jcr:content/renditions/cq5dam.web.512.512.png">
+				</div>
+				<div class="exp_text">
+					<p class="exp_h" style="margin:0;">URBAN GETAWAYS</p>
+					<p class="exp_p">
+						There is magic to be found in the energy of a bustling city. Where vibrant markets offer you everything you could imagine and centuries of history hide in the most unassuming places. Discover the world’s most spectacular urban hubs.
+					</p>
+					<p style="color:#aa7938;">VIEW DETAILS<img src="https://www.tajhotels.com/content/dam/tajhotels/icons/right-arrow.PNG" width="30px" valign="top" style="margin:3px 0 0 10px;"></p>
+				</div>
+				<div class="exp_image">
+					<img src="exp_4.png" width="270px" height="250px" style="margin:25px 0 0 50px;">
+				</div>
+
+			</div>
+		</div>
+		<div style="width:100%; height:50px; background:#fff;">
+			<p align="center" style="color:#aa7938; margin:0; padding-top:10px;"><b>SHOW MORE</b></p>
+		</div>
+		<div id="our_area">
+			<p align="center" class="headline" style="margin:0; padding-top:50px;">OUR ANCILLARY SERVICES</p>
+			<div id="our_img">
+				<div id="our1_area">
+					<img src="https://www.tajhotels.com/content/dam/luxury/weddings/taj-timeless-wedding.png/jcr:content/renditions/cq5dam.web.512.512.png" width="880px" height="500px">
+					<p class="our_img_p" style="margin:-120px 0 0 20px;">TIMELESS WEDDINGS</p>
+				</div>
+				<div id="our2_area">
+					<div id="our2_img">
+						<img src="https://www.tajhotels.com/content/dam/luxury/weddings/jiva-spa-new.png/jcr:content/renditions/cq5dam.web.512.512.png" width="380px">
+						<p class="our_img_p" style="margin:-120px 0 0 20px;">J WELLNESS CIRCLE</p>
+					</div>
+					<div id="our2_img" style="margin-top:20px;">
+						<img src="https://www.tajhotels.com/content/dam/tajhotels/ancillary-services/epicure-banner-400-x-400-nnn.jpg/jcr:content/renditions/cq5dam.web.512.512.jpeg" width="380px" style="margin-top:-85px;">
+						<p class="our_img_p" style="margin:-135px 0 0 20px;">LIFESTYLE MEMBERSHIP</p>
+					</div>
+				</div>
+			</div>
+			<div id="our3_area">
+				<div id="our2_img" style="margin-left:130px;">
+					<img src="https://www.tajhotels.com/content/dam/tajhotels/in/en/events-experiences/Heritage.jpg" width="400px" height="250px" style="margin:-20px 0 0 -20px;">
+					<p class="our_img_p" style="margin:-70px 0 0 20px;">MEETINGS AND EVENTS</p>
+				</div>
+				<div id="our3_img">
+					<img src="https://www.tajhotels.com/content/dam/tajhotels/ancillary-services/taj.JPG/jcr:content/renditions/cq5dam.web.512.512.jpeg" width="480px">
+					<p class="our_img_p" style="margin:-70px 0 0 20px;">TAJ EXPERIENCE GIFT CARDS</p>
+				</div>
+				<div id="our2_img">
+					<img src="https://www.tajhotels.com/content/dam/luxury/hotels/Taj_Mahal_Delhi/images/4x3/Varq-PrivateDiningRoom-Master.jpg/jcr:content/renditions/cq5dam.web.512.512.jpeg" width="380px">
+					<p class="our_img_p" style="margin:-120px 0 0 20px;">DINING</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="brand_area">
+			<p class="headline" align="center">OUR BRAND</p>
+			<div id="brand0_area">
+				<div id="brand1_area">
+					<div class="box">
+						<img src="https://www.tajhotels.com/content/dam/tajhotels/marquee-brands/Taj%20Hotels%20%287%29.png/jcr:content/renditions/cq5dam.web.756.756.png" height="500px" style="margin:0 0 0 -65px;">
+						<div class="logo_back">
+							<img src="https://www.tajhotels.com/content/dam/logos/Taj-white-logo-compressed.png" style="margin:20px 0 0 125px; height:80px;">
+						</div>
+						<div class="details_1">
+							<img class="card_img" src="https://www.tajhotels.com/content/dam/tajhotels/marquee-brands/Taj%20Hotels%20%287%29.png/jcr:content/renditions/cq5dam.web.756.756.png">
+							<img class="card_logo" src="https://www.tajhotels.com/content/dam/tajhotels/logos/new-design-logos/brands/taj-brand-home-logo.PNG" height="80px">
+							<p align="center" style="margin:0 35px 10px 35px;">
+								The unrivalled guardian of grandeur, Taj conjures a panoply of superlatives. With an art of hospitality that has been perfected over a century, Taj delivers unmatched experiences and lasting memories for guests around the world.
+							</p>
+							<button class="button_card">KNOW MORE</button>
+						</div>
+					</div>
+
+					
+					<div class="box">
+						<img src="https://www.tajhotels.com/content/dam/seleqtions/pilibhit-house/pilibhit-house.jpeg/jcr:content/renditions/cq5dam.web.756.756.jpeg" height="500px" style="margin:0 0 0 -190px;">
+						<div class="logo_back">
+							<img src="https://www.tajhotels.com/content/dam/tajhotels/logos/seleQtions-invert.png" style="display:block; margin:40px auto; height:80px;">
+						</div>
+						<div class="details_1">
+							<img class="card_img" src="https://www.tajhotels.com/content/dam/seleqtions/pilibhit-house/pilibhit-house.jpeg/jcr:content/renditions/cq5dam.web.756.756.jpeg">
+							<img class="card_logo" src="https://www.tajhotels.com/content/dam/tajhotels/logos/new-design-logos/brands/seleqtions-brand-home-logo.PNG" height="80px">
+							<p align="center" style="margin:0 35px 10px 35px;">
+								Celebrating a legacy of time, a sense of place or a specific theme, SeleQtions offers a range of marquee hotels that each boast of distinct and special experiences.
+							</p>
+							<button class="button_card">KNOW MORE</button>
+						</div>
+					</div>
+
+					
+					<div class="box">
+						<img src="https://www.tajhotels.com/content/dam/tajhotels/ihcl/vivanta/vivanta_sikkim_ihcl.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" height="500px" style="margin:0 0 0 -170px;">
+						<div class="logo_back">
+							<img src="https://www.tajhotels.com/content/dam/tajhotels/ihcl/Logos/vivanta_inverted.png" style="display:block; margin:50px auto; height:30px;">
+						</div>
+						<div class="details_1">
+							<img class="card_img" src="https://www.tajhotels.com/content/dam/tajhotels/ihcl/vivanta/vivanta_sikkim_ihcl.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg">
+							<img class="card_logo" src="https://www.tajhotels.com/content/dam/tajhotels/ihcl/Logos/icon-vivanta.png" height="30px">
+							<p align="center" style="margin:0 35px 10px 35px;">
+								A distinctive collection of vibrant hotels that are handpicked for the young, contemporary achievers of today who stand apart without being rebels, and that allow them to discover joie de vivre.
+							</p>
+							<button class="button_card">KNOW MORE</button>
+						</div>
+					</div>
+
+
+					<div class="box">
+						<img src="https://www.tajhotels.com/content/dam/tajhotels/ihcl/ginger/Ginger_406x487.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" height="500px" style="margin:0 0 0 -105px;">
+						<div class="logo_back">
+							<img src="https://www.tajhotels.com/content/dam/tajhotels/ihcl/Logos/ginger_inverted.png" style="display:block; margin:50px 0 50px 85px; height:60px;">
+						</div>
+						<div class="details_1">
+							<img class="card_img" src="https://www.tajhotels.com/content/dam/tajhotels/ihcl/ginger/Ginger_406x487.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg">
+							<img class="card_logo" src="https://www.tajhotels.com/content/dam/ama/Logo/gingerLogo.png" style="margin-left:100px;">
+							<p align="center" style="margin:0 35px 10px 35px;">
+								Deeply contemporary in spirit, Ginger caters to those for whom the lines between work and play are blurred and those who need a hotel as seamless, flexible and open minded as they are.
+							</p>
+							<button class="button_card">KNOW MORE</button>
+						</div>
+					</div>
+
+					
+					<div class="box">
+						<img src="https://www.tajhotels.com/content/dam/ama/Our-hotels/goa/Gallery/_DSC8731-Edit.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" height="500px" style="margin:0 0 0 -180px;">
+						<div class="logo_back">
+							<img src="https://www.tajhotels.com/content/dam/tajhotels/ihcl/Logos/ama_inverted.png" style="display:block; margin:30px auto; height:100px;">
+						</div>
+						<div class="details_1">
+							<img class="card_img" src="https://www.tajhotels.com/content/dam/ama/Our-hotels/goa/Gallery/_DSC8731-Edit.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg">
+							<img class="card_logo" src="https://www.tajhotels.com/content/dam/ama/Logo/ama-logo-transparent.png">
+							<p align="center" style="margin:0 35px 10px 35px;">
+								Elegant and charming escapes set in breathtaking locales that combine homely comfort and warm service to deliver a truly immersive and authentic local experience for their guests.
+							</p>
+							<button class="button_card">KNOW MORE</button>
+						</div>
+					</div>
+
+					
+					<div class="box">
+						<img src="https://www.tajhotels.com/content/dam/tajhotels/campaign/republic/qmin.PNG" height="500px" style="margin:0 0 0 -140px;">
+						<div class="logo_back">
+							<img src="https://www.tajhotels.com/content/dam/tajhotels/ihcl/Logos/qmin_inverted.png" style="display:block; margin:5px auto; height:150px;">
+						</div>
+						<div class="details_1">
+							<img class="card_img" src="https://www.tajhotels.com/content/dam/tajhotels/campaign/republic/qmin.PNG">
+							<img class="card_logo" src="https://www.tajhotels.com/content/dam/qmin/Original-logo-qmin.png" style="display:block; margin:5px auto; height:130px;">
+							<p align="center" style="margin:0 35px 10px 35px;">
+								Qmin brings Qurated dishes from our iconic restaurants, made with the highest Quality of ingredients, from a wide variety of Quisines to the doorstep of our guests.
+							</p>
+							<button class="button_card">KNOW MORE</button>
+						</div>
+					</div>
+
+					
+					<div class="box">
+						<img src="https://www.tajhotels.com/content/dam/tajhotels/ihcl/newdamimages/Taj-sats-banner.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" height="500px" style="margin:0 0 0 -390px;">
+						<div class="logo_back">
+							<img src="https://www.tajhotels.com/content/dam/tajhotels/taj-sats/taj_sats-01.png" style="display:block; margin:20px auto; height:100px;">
+						</div>
+						<div class="details_1">
+							<img class="card_img" src="https://www.tajhotels.com/content/dam/tajhotels/ihcl/newdamimages/Taj-sats-banner.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg">
+							<img class="card_logo" src="https://www.tajhotels.com/content/dam/tajhotels/logos/new-design-logos/brands/tajsats-brand-home-logo.PNG" style="display:block; margin:20px auto; height:80px;">
+							<p align="center" style="margin:0 35px 10px 35px;">
+								Elevating air catering with creative twists and elegant accents, TajSATS enriches travel with delicious and nourishing meals, creating hospitality that never compromises on quality.
+							</p>
+							<button class="button_card">KNOW MORE</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div id="footer_area">
+			<div style="width:100%; height:80px;">
+				<p style="margin:0; padding:30px 0 0 120px;">Destinations &nbsp;<font color="#aa7938" style="font-size:150%;">+</font></p>
+			</div>
+			<hr style="margin:0 0 0 120px; width:1300px;">
+			<div style="width:100%; height:200px; background:#efeeee;">
+				<div class="f1_area" style="margin:0 0 0 120px;">
+					<ul>
+						<li>Airline & Frequent Flyer Partners</li>
+						<li>Taj Magazine</li>
+						<li>J Wellness Circle</li>
+						<li>Site Map</li>
+						<li>Terms Of Use</li>
+						<li>Contact Us</li>
+					</ul>
+				</div>
+				<div class="f1_area">
+					<ul>
+						<li>Accessibility</li>
+						<li>Languages</li>
+						<li>Privacy Policy</li>
+						<li>Press Room</li>
+						<li>Careers</li>
+						<li>Blogs</li>
+					</ul>
+				</div>
+				<div class="f1_area">
+					<ul>
+						<li>SAATHI</li>
+						<li>NIDHI</li>
+						<li>UTSAV</li>
+						<li>INCREDIBLE INDIA FILM</li>
+					</ul>
+				</div>
+				<div class="f1_area">
+					<ul>
+						<li>Join our newsletter</li>
+						<li><button class="button">SUBSCRIBE</button></li>
+						<li>Connect with us:</li>
+						<li>
+							<img src="https://www.tajhotels.com/content/dam/tajhotels/icons/social-icons/ic-facebook@2x.png" width="40px" style="margin-right:15px;">
+							<img src="https://www.tajhotels.com/content/dam/tajhotels/icons/social-icons/ic-instagram@2x.png" width="40px" style="margin-right:15px;">
+							<img src="https://www.tajhotels.com/content/dam/tajhotels/icons/social-icons/twitter-logo-x.png" width="40px" style="margin-right:15px;">
+							<img src="https://www.tajhotels.com/content/dam/tajhotels/icons/social-icons/ic-youtube.svg" width="40px">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div style="width:100%; height:50px; margin:0; background:#efeeee;">
+				<ul style="margin:20px 0 0 80px; list-style-type:none;">
+					<li>Loyalty Programs &nbsp;<font color="#aa7938" style="font-size:150%;">+</font></li>
+				</ul>
+			</div>
+			<hr style="margin:0 0 0 120px; width:1300px;">
+			<div style="width:600px; margin:0 0 0 120px; float:left;">
+				<img src="https://www.tajhotels.com/content/dam/tajhotels/icons/style-icons/ihcl-logo.svg" style="width:90px; margin:20px 0 10px 0;">
+				<p>©2022 The Indian Hotels Company Limited. All Rights Reserved.</p>
+			</div>
+			<div style="width:600px; height:100px; margin:0 0 0 120px; float:left;">
+				<p>Our Brands:</p>
+				<img src="https://www.tajhotels.com/content/dam/tajhotels/icons/style-icons/logo--Taj.png/jcr:content/renditions/cq5dam.web.141.141.png" height="25px" style="margin:auto 0 auto 10px;">
+				<img src="https://www.tajhotels.com/content/dam/tajhotels/icons/style-icons/seleqtions-brand-icon.png/jcr:content/renditions/cq5dam.web.141.141.png" height="25px" style="margin:5px 0 -5px 10px;">
+				<img src="https://www.tajhotels.com/content/dam/tajhotels/ihcl/Logos/icon-vivanta.png/jcr:content/renditions/cq5dam.web.141.141.png" height="10px" style="margin:-5px 0 5px 10px;">
+				<img src="https://www.tajhotels.com/content/dam/tajhotels/ihcl/Logos/Ginger-icon.png/jcr:content/renditions/cq5dam.web.141.141.png" height="20px" style="margin:auto 0 auto 10px;">
+				<img src="https://www.tajhotels.com/content/dam/ama/Logo/ama-brand-logo1.png/jcr:content/renditions/cq5dam.web.141.141.png" height="30px" style="margin:5px 0 -5 10px;">
+				<img src="https://www.tajhotels.com/content/dam/qmin/Original-logo-qmin.png/jcr:content/renditions/cq5dam.web.141.141.png" height="30px" style="margin:5px 0 -5px 10px;">
+				<img src="https://www.tajhotels.com/content/dam/logos/taj_sats-01.png/jcr:content/renditions/cq5dam.web.141.141.png" height="30px" style="margin:auto 0 auto 10px;">
+			</div>
+		</div>
+	</body>
+</html>
